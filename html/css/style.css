@@ -1,0 +1,397 @@
+:root {
+    --shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    z-index: 10;
+}
+
+nav a {
+    color: #00FFC6;
+    transition: letter-spacing .3s ease-in-out;
+}
+
+nav a:hover {
+    letter-spacing: 4.4px;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logo h3{
+    font-size: 1.4em;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 10px 25px;
+    letter-spacing: 1.2px;
+}
+
+.nav-item:hover {
+    color: #30AADD;
+}
+
+.btn {
+    background-color: #247881;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: #00FFC6;
+    font-weight: 1000;
+    cursor: pointer;
+    font-size: 1.145em;
+    transition: box-shadow .1s ease-in-out, transform .1s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 1px 2px 8px rgba(0, 255, 198, 0.7);
+}
+
+.btn:active {
+    transform: scale(.98);
+}
+
+.btn-red {
+    background: #EE6677;
+    color: #247881;
+}
+
+.container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.card {
+    width: fit-content;
+    min-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    border: #00FFC6 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.card-right img {
+    width: 100%;
+    height: 50%;
+}
+
+.card-right .icon-img {
+    width: 128px;
+    height: 128px;
+}
+
+.card-right a {
+    color: #fff;
+}
+
+.card-right a:hover {
+    color: blue;
+}
+
+.modal-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-menu h2 {
+    transform: rotate(14deg);
+}
+
+.modal-menu h3 {
+    transform: rotate(355deg);
+}
+
+.zyber-form {
+    /*position: relative;*/
+    border: 1px solid #00FFC6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    border-radius: 20px;
+    /*transform: translateX(-50%);*/
+}
+
+#exitBtn {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background:rgba(0, 0, 0, 0);
+    color: #00FFC6;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 1000;
+    font-size: 1.145em;
+}
+
+#exitBtn:hover {
+    cursor: pointer;
+    box-shadow: 1px 4px 12px rgba(0, 255, 198, 0.7);
+}
+
+#exitBtn:active {
+    transform: scale(.98);
+}
+
+.zyber-form div {
+    width: 100%;
+}
+
+.zyber-form input {
+    height: 30px;
+    padding-left: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 13px; 
+}
+
+.zyber-form input:focus {
+    outline: none;
+}
+
+.zyber-form input[type=submit] {
+    height: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-word {
+    margin-left: 20px;
+    color: #30AADD;
+    font-weight: 900;
+    letter-spacing: 7px;
+}
+
+.user-info {
+    min-height: 500px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    padding: 30px;
+    align-items: center;
+    justify-content: start;
+}
+
+.user-img {
+    position: relative;
+    height:200px;
+    width: 200px;
+    background: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.btn-pic-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+.user-about {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 150px;
+    background: #444;
+    border: none;
+    resize: none;
+    color: #00FFC6;
+    font-family: "Audiowide";
+    font-size: 16px;
+    text-align: justify;
+}
+
+.user-about:focus {
+    outline: none;
+}
+
+#special-title {
+    transform: rotate(7deg);
+    margin-bottom: 30px;
+}
+
+/* Posts Section */
+
+.post {
+    /*border: 1px solid #00ffc6;*/
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    background: #222;
+    box-shadow: 1px 4px 12px rgba(0, 255, 198, 0.7);
+}
+
+.post-title {
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.post-body {
+    font-size: 1.3em;
+}
+
+#postform {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #00ffc6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+#postform input {
+    height: 50px;
+    border: none;
+}
+
+#postform input[type="text"] {
+    font-size: 28px;
+    padding: 4px;
+    background: #111;
+    border: 1px solid #00ffc6;
+    color: #00ffc6;
+    border-radius: 8px;
+}
+
+#postform input[type="text"]:focus {
+    outline: none;
+}
+
+#create_account:hover {
+    text-decoration: underline;
+}
+
+/* ZyberInfo */
+
+.zyber-info {
+    position: absolute;
+    background: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.zyber-info-prompt {
+    text-align: center;
+}
+
+.zyber-register-form {
+    margin-top: 50px;
+    width: fit-content;
+    background: #333;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 23px;
+    padding: 25px;
+}
+
+.zyber-register-form .register {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.register input, .register select {
+    background: #666;
+    color: #00FFC6;
+    height: 40px;
+    font-size: 23px;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.register input:focus, .register select:focus {
+    outline: none;
+}

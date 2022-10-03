@@ -1,0 +1,13 @@
+[Unit]
+Description=zyberbunker keep the zyper safe
+After=network.target
+
+[Service]
+Environment=NODE_PORT=8001
+Type=simple
+User=billy
+ExecStart=/usr/bin/node /var/www/backend/app.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

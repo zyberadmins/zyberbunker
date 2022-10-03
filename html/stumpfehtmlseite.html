@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyberbunker</title>
+</head>
+<body>
+    <h1>Wir fetchen hier ein par dinge</h1>
+
+    <button id="clickme">FUCK YOU</button>
+
+    <ul id="data">
+
+    </ul>
+
+    <script>
+        const btn = document.getElementById("clickme")
+        btn.addEventListener("click", () => {
+            fetch("https://zyberbunker.com/api/name")
+            .then(res => {
+                return res.json()
+            }).then(dta => {
+                console.log(dta.name)
+            }).catch(err => {
+                console.log(err)
+            })
+        })
+    </script>
+
+</body>
+</html>
